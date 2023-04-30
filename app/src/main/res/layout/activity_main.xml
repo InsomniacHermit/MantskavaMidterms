@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="107dp"
+        android:src="@android:drawable/stat_notify_chat"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="151dp"
+        app:tint="@color/black" />
+
+    <EditText
+        android:id="@+id/NumberInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="enter recipient's number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_colorless"/>
+
+    <EditText
+        android:id="@+id/MessageInput"
+        android:layout_width="324dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="enter your message here"
+        android:inputType="textPersonName"
+        android:background="@drawable/background_colorless"/>
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_colorless"
+        android:text="Send message"
+        android:theme="@style/Theme.AppCompat"/>
+
+</LinearLayout>
